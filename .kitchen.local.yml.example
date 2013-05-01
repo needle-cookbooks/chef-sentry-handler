@@ -1,0 +1,7 @@
+---
+suites:
+- name: default
+  run_list: ["recipe[chef-sentry-handler::test]"]
+  attributes:
+    sentry:
+        dsn: https://foo:bar@app.getsentry.com/1234
